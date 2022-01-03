@@ -9,7 +9,8 @@ module.exports = async () => {
         };
         await mongoose.connect(
           // "mongodb://localhost/final-main",
-           "mongodb://"+process.env.ENV_PORT+":27017/?directConnection=true&serverSelectionTimeoutMS=2000",
+          // "mongodb://"+process.env.ENV_PORT+":27017/?directConnection=true&serverSelectionTimeoutMS=2000",
+            "mongodb://mongodb:mongodb@"+process.env.ENV_PORT+":27017/mongodb?directConnection=true&serverSelectionTimeoutMS=2000",
             connectionParams
         );
         console.log("Connected to database.");
