@@ -4,5 +4,5 @@ WORKDIR /home/backend
 COPY package*.json /home/backend
 RUN npm install
 COPY . .
-EXPOSE 8080
+EXPOSE 8000
 CMD ["node", "/home/backend/index.js"]
