@@ -2,6 +2,7 @@ FROM node:16
 CMD [ "echo", "hello" ]
 
 # Create app directory
+RUN mkdir -p /app
 WORKDIR /app
 
 # Install app dependencies
