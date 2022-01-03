@@ -2,6 +2,7 @@ FROM node:16
 CMD [ "echo", "hello" ]
 
 # Create app directory
+RUN mkdir /app
 WORKDIR /app
 
 # Install app dependencies
@@ -14,7 +15,7 @@ RUN npm install
 # RUN npm ci --only=production
 
 # Bundle app source
-COPY . /app
+COPY . .
 
 EXPOSE 8080
-CMD [ "node", "index.js" ]
+CMD [ "node", "/app/index.js" ]
