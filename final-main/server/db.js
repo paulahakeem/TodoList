@@ -9,7 +9,7 @@ module.exports = async () => {
           // useUnifiedTopology: true,
         };
         await mongoose.connect(
-            "mongodb://mongodb:mongodb@"+process.env.ENV_PORT+":27017/mongodb?directConnection=true&serverSelectionTimeoutMS=2000",
+            "mongodb://"+process.env.ENV_PORT+":27017/?directConnection=true&serverSelectionTimeoutMS=2000",
              // "mongodb://127.0.0.1:27017/todo-app",
               connectionParams
           );
