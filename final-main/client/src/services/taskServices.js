@@ -1,5 +1,5 @@
 import axios from "axios";
-const apiUrl = "http://server3-project.apps.eu45.prod.nextcle.com/api/tasks";
+const apiUrl = "http://server2-project10.apps.eu45.prod.nextcle.com/api/tasks";
 //const apiUrl = "http://"+process.env.ENV_PORT+":8080/api/tasks";
 
 export function getTasks() {
